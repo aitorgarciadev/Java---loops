@@ -1,12 +1,14 @@
-import static org.junit.jupiter.api.Assertions.*;
+package src.test.java.dev.aitor;
+
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class MultiplicationTableTest {
 
     @Test
     public void testGenerateTable() {
         int n = 5;
-        String[] expected = {
+        String[] expectedOutput = {
             "5 x 1 = 5",
             "5 x 2 = 10",
             "5 x 3 = 15",
@@ -18,7 +20,7 @@ public class MultiplicationTableTest {
             "5 x 9 = 45",
             "5 x 10 = 50"
         };
-
-        assertArrayEquals(expected, MultiplicationTable.generateTable(n));
+        String[] actualOutput = MultiplicationTable.generateTable(n);
+        assertArrayEquals(expectedOutput, actualOutput);
     }
 }
