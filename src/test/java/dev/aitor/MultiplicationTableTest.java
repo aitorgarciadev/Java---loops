@@ -1,4 +1,4 @@
-package src.test.java.dev.aitor;
+package dev.aitor;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

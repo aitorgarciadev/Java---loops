@@ -1,4 +1,4 @@
-package src.main.java.dev.aitor;
+package dev.aitor;
 public class MultiplicationTable {
 
     public static String[] generateTable(int n) {
